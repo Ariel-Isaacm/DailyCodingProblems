@@ -12,5 +12,11 @@ public class Sep1419Test {
         assertArrayEquals(new int[]{120, 60, 40, 30, 24}, solution);
         solution = daily.solve(new int[]{3, 2, 1});
         assertArrayEquals(new int[]{2, 3, 6}, solution);
+
+        solution = daily.solveNoDivision(new int[]{1, 2, 3, 4, 5});
+        assertArrayEquals(new int[]{120, 60, 40, 30, 24}, solution);
+
+        solution = daily.solveNoDivision(new int[]{3, 2, 1});
+        assertArrayEquals(new int[]{2, 3, 6}, solution);
     }
 }
